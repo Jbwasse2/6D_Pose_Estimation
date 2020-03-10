@@ -1,0 +1,129 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{lipsum}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+%TODOS
+%Justin
+%Member Roles, Project Description and Goals (Hard), Setup github, setup lab computer biocluster?, slack
+%Jiaxuan
+%Relationship to Background, Member Roles, Abstract
+%Sanjeev
+%Relationship to Background, Member Roles, Intro, Reservations
+%Zihao
+%Relationship to Background, Member Roles, Resources, Submits if needed
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{6D Pose Estimation}
+
+\author{Justin Wasserman\\
+University of Illinois at Urbana-Champaign\\
+1308 W Main St, Urbana, IL 61801\\
+{\tt\small jbwasse2@illinosi.edu}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Second Author\\
+Institution2\\
+First line of institution2 address\\
+{\tt\small secondauthor@i2.org}
+\and
+Third Author\\
+Institution3\\
+First line of institution3 address\\
+{\tt\small secondauthor@i3.org}
+\and
+Fourth Author\\
+Institution4\\
+First line of institution4 address\\
+{\tt\small secondauthor@i4.org}
+}
+
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+\section{Introduction}
+The goal of 6D pose estimation is to predict a $SE(3)$ matrix for a given object with respect to the camera. This has significant applications to grasping tasks \cite{tremblayDeepObjectPose2018} \cite{xiangPoseCNNConvolutionalNeural2018}, and autonomous navigation \cite{wangDenseFusion6DObject2019}. In this work we hope to replicate the results in \cite{wangDenseFusion6DObject2019} and to further extend the results if time allows for it.
+
+
+\subsection{Project Description and Goals}
+TODO: Explain different parts of the project, extensions
+
+
+
+\subsection{Member Roles}
+\cite{wangDenseFusion6DObject2019} nicely splits the architecture of the model into multiple different parts. These parts will be split amongst the group members where each group member will be in charge of a given part.
+
+\subsubsection{Semantic Segmentation}
+Sanjeev is responsible for this part. TODO: Give a brief sentence or 2 on what this is.
+\subsubsection{Dense Feature Extraction - 3D point cloud}
+Zihao/Jiaxuan is responsible for this part. TODO: Give a brief sentence or 2 on what this is.
+\subsubsection{Dense Feature Extraction - Dense Color image feature embedding}
+Zihao/Jiaxuan is responsible for this part. TODO: Give a brief sentence or 2 on what this is.
+\subsubsection{Pixel-wise Dense Fusion}
+Jiaxuan is responsible for this part. TODO: Give a brief sentence or 2 on what this is.
+\subsubsection{6D Object Pose Estimation}
+Sanjeev/Justin is responsible for this part. TODO: Give a brief sentence or 2 on what this is.
+\subsubsection{Iterative Refinement}
+Justin is responsible for this part. TODO: Give a brief sentence or 2 on what this is.
+
+
+
+
+\subsection{Resources}
+TODO: Add images from YCB-Video dataset \cite{xiangPoseCNNConvolutionalNeural2018}. Add images from LineMOD Dataset (Find citation). Toolbox for using this data is available at \href{https://github.com/yuxng/YCB_Video_toolbox}{this github page}. Python/Pytorch for implementation.
+
+% Cant guarantee right now, but have this here for now - Training will be performed on the "BioCluster" a high performance computer where the group has the potential to be allocated 28 Intel Xeons Processors, 128 GB of RAM, and 4 Nvidia GTX 1080 Ti.
+
+
+
+\subsection{Reservations}
+TODO: Read paper, outline problems we may face and setup a minimum goal. (Possible stretch is to get it working on a real robot)
+
+
+
+\subsection{Relationship to Background}
+TODO: Talk about your background
+
+Justin Wasserman is a first year grad student in ECE with an interest in robotics and computer vision. Currently his research is related computer vision and motion/path planning related to a biologically inspired system (see https://cyberoctopus.csl.illinois.edu/ for more). This work is currently not related to his research project, but it could relate to tasks that the biologically inspired system may need to complete such as grasping and navigation. Justin is familiar with a few learning frameworks such as PyTorch \cite{paszkeAutomaticDifferentiationPyTorch}, Nengo \cite{bekolayNengoPythonTool2014}, and Tensorflow \cite{abadiTensorFlowLargeScaleMachine2016}. He has contributed to open source projects related to learning packages including PyTorch's computer vision action recognition datasets, Bindsnet \cite{hazanBindsNETMachineLearningOriented2018}, and his own personal, open-source projects that incorporate these packages.
+
+%-------------------------------------------------------------------------
+
+
+{\small
+\bibliographystyle{ieee_fullname}
+\bibliography{egbib}
+}
+
+\end{document}

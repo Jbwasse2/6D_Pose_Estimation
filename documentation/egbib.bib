@@ -1,0 +1,113 @@
+
+@article{abadiTensorFlowLargeScaleMachine2016,
+  title = {{{TensorFlow}}: {{Large}}-{{Scale Machine Learning}} on {{Heterogeneous Distributed Systems}}},
+  shorttitle = {{{TensorFlow}}},
+  author = {Abadi, Martín and Agarwal, Ashish and Barham, Paul and Brevdo, Eugene and Chen, Zhifeng and Citro, Craig and Corrado, Greg S. and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Goodfellow, Ian and Harp, Andrew and Irving, Geoffrey and Isard, Michael and Jia, Yangqing and Jozefowicz, Rafal and Kaiser, Lukasz and Kudlur, Manjunath and Levenberg, Josh and Mane, Dan and Monga, Rajat and Moore, Sherry and Murray, Derek and Olah, Chris and Schuster, Mike and Shlens, Jonathon and Steiner, Benoit and Sutskever, Ilya and Talwar, Kunal and Tucker, Paul and Vanhoucke, Vincent and Vasudevan, Vijay and Viegas, Fernanda and Vinyals, Oriol and Warden, Pete and Wattenberg, Martin and Wicke, Martin and Yu, Yuan and Zheng, Xiaoqiang},
+  date = {2016-03-16},
+  url = {http://arxiv.org/abs/1603.04467},
+  urldate = {2020-03-09},
+  abstract = {TensorFlow is an interface for expressing machine learning algorithms, and an implementation for executing such algorithms. A computation expressed using TensorFlow can be executed with little or no change on a wide variety of heterogeneous systems, ranging from mobile devices such as phones and tablets up to large-scale distributed systems of hundreds of machines and thousands of computational devices such as GPU cards. The system is flexible and can be used to express a wide variety of algorithms, including training and inference algorithms for deep neural network models, and it has been used for conducting research and for deploying machine learning systems into production across more than a dozen areas of computer science and other fields, including speech recognition, computer vision, robotics, information retrieval, natural language processing, geographic information extraction, and computational drug discovery. This paper describes the TensorFlow interface and an implementation of that interface that we have built at Google. The TensorFlow API and a reference implementation were released as an open-source package under the Apache 2.0 license in November, 2015 and are available at www.tensorflow.org.},
+  archivePrefix = {arXiv},
+  eprint = {1603.04467},
+  eprinttype = {arxiv},
+  file = {/home/justin/Zotero/storage/Z2B49L6E/Abadi et al. - 2016 - TensorFlow Large-Scale Machine Learning on Hetero.pdf;/home/justin/Zotero/storage/WP54EQ9X/1603.html},
+  keywords = {Computer Science - Distributed; Parallel; and Cluster Computing,Computer Science - Machine Learning},
+  primaryClass = {cs}
+}
+
+@article{bekolayNengoPythonTool2014,
+  title = {Nengo: A {{Python}} Tool for Building Large-Scale Functional Brain Models},
+  shorttitle = {Nengo},
+  author = {Bekolay, Trevor and Bergstra, James and Hunsberger, Eric and DeWolf, Travis and Stewart, Terrence C. and Rasmussen, Daniel and Choo, Xuan and Voelker, Aaron Russell and Eliasmith, Chris},
+  date = {2014},
+  journaltitle = {Frontiers in Neuroinformatics},
+  volume = {7},
+  issn = {1662-5196},
+  doi = {10.3389/fninf.2013.00048},
+  url = {http://journal.frontiersin.org/article/10.3389/fninf.2013.00048/abstract},
+  urldate = {2020-03-09},
+  abstract = {Neuroscience currently lacks a comprehensive theory of how cognitive processes can be implemented in a biological substrate. The Neural Engineering Framework (NEF) proposes one such theory, but has not yet gathered significant empirical support, partly due to the technical challenge of building and simulating large-scale models with the NEF. Nengo is a software tool that can be used to build and simulate large-scale models based on the NEF; currently, it is the primary resource for both teaching how the NEF is used, and for doing research that generates specific NEF models to explain experimental data. Nengo 1.4, which was implemented in Java, was used to create Spaun, the world’s largest functional brain model (Eliasmith et al., 2012). Simulating Spaun highlighted limitations in Nengo 1.4’s ability to support model construction with simple syntax, to simulate large models quickly, and to collect large amounts of data for subsequent analysis. This paper describes Nengo 2.0, which is implemented in Python and overcomes these limitations. It uses simple and extendable syntax, simulates a benchmark model on the scale of Spaun 50 times faster than Nengo 1.4, and has a flexible mechanism for collecting simulation results.},
+  file = {/home/justin/Zotero/storage/WKAKLGSM/Bekolay et al. - 2014 - Nengo a Python tool for building large-scale func.pdf},
+  langid = {english}
+}
+
+@article{hazanBindsNETMachineLearningOriented2018,
+  title = {{{BindsNET}}: {{A Machine Learning}}-{{Oriented Spiking Neural Networks Library}} in {{Python}}},
+  shorttitle = {{{BindsNET}}},
+  author = {Hazan, Hananel and Saunders, Daniel J. and Khan, Hassaan and Patel, Devdhar and Sanghavi, Darpan T. and Siegelmann, Hava T. and Kozma, Robert},
+  date = {2018},
+  journaltitle = {Frontiers in Neuroinformatics},
+  shortjournal = {Front. Neuroinform.},
+  volume = {12},
+  publisher = {{Frontiers}},
+  issn = {1662-5196},
+  doi = {10.3389/fninf.2018.00089},
+  url = {https://www.frontiersin.org/articles/10.3389/fninf.2018.00089/full},
+  urldate = {2020-03-09},
+  abstract = {The development of spiking neural network simulation software is a critical component enabling the modeling of neural systems and the development of biologically inspired algorithms. Existing software frameworks support a wide range of neural functionality, software abstraction levels, and hardware devices, yet are typically not suitable for rapid prototyping or application to problems in the domain of machine learning. In this paper, we describe a new Python package for the simulation of spiking neural networks, specifically geared towards machine learning and reinforcement learning. Our software, called \textbackslash{}texttt\{BindsNET\}, enables rapid building and simulation of spiking networks and features user-friendly, concise syntax. \textbackslash{}texttt\{BindsNET\} is built on the \textbackslash{}texttt\{PyTorch\} deep neural networks library, facilitating the implementation of spiking neural networks on fast CPU and GPU computational platforms. Moreover, the \textbackslash{}texttt\{BindsNET\} framework can be adjusted to utilize other existing computing and hardware backends; e.g., \textbackslash{}texttt\{TensorFlow\} and \textbackslash{}texttt\{SpiNNaker\}. We provide an interface with the OpenAI \textbackslash{}texttt\{gym\} library, allowing for training and evaluation of spiking networks on reinforcement learning environments. We argue that this package facilitates the use of spiking networks for large-scale machine learning problems and show some simple examples by using \textbackslash{}texttt\{BindsNET\} in practice. \textbackslash{}blfootnote\{\textbackslash{}texttt\{BindsNET\} code is available at \textbackslash{}texttt\{https://github.com/Hananel-Hazan/bindsnet\}. To install the version of the code used for this paper, use \textbackslash{}texttt\{pip install bindsnet=0.2.1\}.\}},
+  file = {/home/justin/Zotero/storage/ZVK6QJ99/Hazan et al. - 2018 - BindsNET A Machine Learning-Oriented Spiking Neur.pdf},
+  keywords = {GPU-computing,Machine Laerning,Python (programming language),PyTorch,reinforcement learning (RL).,Spiking Network},
+  langid = {english}
+}
+
+@article{paszkeAutomaticDifferentiationPyTorch,
+  title = {Automatic Differentiation in {{PyTorch}}},
+  author = {Paszke, Adam and Gross, Sam and Chintala, Soumith and Chanan, Gregory and Yang, Edward and DeVito, Zachary and Lin, Zeming and Desmaison, Alban and Antiga, Luca and Lerer, Adam},
+  pages = {4},
+  abstract = {In this article, we describe an automatic differentiation module of PyTorch — a library designed to enable rapid research on machine learning models. It builds upon a few projects, most notably Lua Torch, Chainer, and HIPS Autograd [4], and provides a high performance environment with easy access to automatic differentiation of models executed on different devices (CPU and GPU). To make prototyping easier, PyTorch does not follow the symbolic approach used in many other deep learning frameworks, but focuses on differentiation of purely imperative programs, with a focus on extensibility and low overhead. Note that this preprint is a draft of certain sections from an upcoming paper covering all PyTorch features.},
+  file = {/home/justin/Zotero/storage/BK3ZCNMG/Paszke et al. - Automatic differentiation in PyTorch.pdf},
+  langid = {english}
+}
+
+@article{tremblayDeepObjectPose2018,
+  title = {Deep {{Object Pose Estimation}} for {{Semantic Robotic Grasping}} of {{Household Objects}}},
+  author = {Tremblay, Jonathan and To, Thang and Sundaralingam, Balakumar and Xiang, Yu and Fox, Dieter and Birchfield, Stan},
+  date = {2018-09-27},
+  url = {http://arxiv.org/abs/1809.10790},
+  urldate = {2020-03-09},
+  abstract = {Using synthetic data for training deep neural networks for robotic manipulation holds the promise of an almost unlimited amount of pre-labeled training data, generated safely out of harm's way. One of the key challenges of synthetic data, to date, has been to bridge the so-called reality gap, so that networks trained on synthetic data operate correctly when exposed to real-world data. We explore the reality gap in the context of 6-DoF pose estimation of known objects from a single RGB image. We show that for this problem the reality gap can be successfully spanned by a simple combination of domain randomized and photorealistic data. Using synthetic data generated in this manner, we introduce a one-shot deep neural network that is able to perform competitively against a state-of-the-art network trained on a combination of real and synthetic data. To our knowledge, this is the first deep network trained only on synthetic data that is able to achieve state-of-the-art performance on 6-DoF object pose estimation. Our network also generalizes better to novel environments including extreme lighting conditions, for which we show qualitative results. Using this network we demonstrate a real-time system estimating object poses with sufficient accuracy for real-world semantic grasping of known household objects in clutter by a real robot.},
+  archivePrefix = {arXiv},
+  eprint = {1809.10790},
+  eprinttype = {arxiv},
+  file = {/home/justin/Zotero/storage/3VWKFAYJ/Tremblay et al. - 2018 - Deep Object Pose Estimation for Semantic Robotic G.pdf;/home/justin/Zotero/storage/JX8JUT2S/1809.html},
+  keywords = {Computer Science - Robotics},
+  primaryClass = {cs}
+}
+
+@inproceedings{wangDenseFusion6DObject2019,
+  title = {{{DenseFusion}}: {{6D Object Pose Estimation}} by {{Iterative Dense Fusion}}},
+  shorttitle = {{{DenseFusion}}},
+  booktitle = {2019 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
+  author = {Wang, Chen and Xu, Danfei and Zhu, Yuke and Martin-Martin, Roberto and Lu, Cewu and Fei-Fei, Li and Savarese, Silvio},
+  date = {2019-06},
+  pages = {3338--3347},
+  publisher = {{IEEE}},
+  location = {{Long Beach, CA, USA}},
+  doi = {10.1109/CVPR.2019.00346},
+  url = {https://ieeexplore.ieee.org/document/8953386/},
+  urldate = {2020-03-09},
+  abstract = {A key technical challenge in performing 6D object pose estimation from RGB-D image is to fully leverage the two complementary data sources. Prior works either extract information from the RGB image and depth separately or use costly post-processing steps, limiting their performances in highly cluttered scenes and real-time applications. In this work, we present DenseFusion, a generic framework for estimating 6D pose of a set of known objects from RGBD images. DenseFusion is a heterogeneous architecture that processes the two data sources individually and uses a novel dense fusion network to extract pixel-wise dense feature embedding, from which the pose is estimated. Furthermore, we integrate an end-to-end iterative pose refinement procedure that further improves the pose estimation while achieving near real-time inference. Our experiments show that our method outperforms state-of-the-art approaches in two datasets, YCB-Video and LineMOD. We also deploy our proposed method to a real robot to grasp and manipulate objects based on the estimated pose. Our code and video are available at https://sites.google.com/view/densefusion/.},
+  eventtitle = {2019 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
+  file = {/home/justin/Zotero/storage/QBR4WWBY/Wang et al. - 2019 - DenseFusion 6D Object Pose Estimation by Iterativ.pdf},
+  isbn = {978-1-72813-293-8},
+  langid = {english}
+}
+
+@article{xiangPoseCNNConvolutionalNeural2018,
+  title = {{{PoseCNN}}: {{A Convolutional Neural Network}} for {{6D Object Pose Estimation}} in {{Cluttered Scenes}}},
+  shorttitle = {{{PoseCNN}}},
+  author = {Xiang, Yu and Schmidt, Tanner and Narayanan, Venkatraman and Fox, Dieter},
+  date = {2018-05-26},
+  url = {http://arxiv.org/abs/1711.00199},
+  urldate = {2020-03-09},
+  abstract = {Estimating the 6D pose of known objects is important for robots to interact with the real world. The problem is challenging due to the variety of objects as well as the complexity of a scene caused by clutter and occlusions between objects. In this work, we introduce PoseCNN, a new Convolutional Neural Network for 6D object pose estimation. PoseCNN estimates the 3D translation of an object by localizing its center in the image and predicting its distance from the camera. The 3D rotation of the object is estimated by regressing to a quaternion representation. We also introduce a novel loss function that enables PoseCNN to handle symmetric objects. In addition, we contribute a large scale video dataset for 6D object pose estimation named the YCB-Video dataset. Our dataset provides accurate 6D poses of 21 objects from the YCB dataset observed in 92 videos with 133,827 frames. We conduct extensive experiments on our YCBVideo dataset and the OccludedLINEMOD dataset to show that PoseCNN is highly robust to occlusions, can handle symmetric objects, and provide accurate pose estimation using only color images as input. When using depth data to further refine the poses, our approach achieves state-of-the-art results on the challenging OccludedLINEMOD dataset. Our code and dataset are available at https://rse-lab.cs.washington.edu/projects/posecnn/.},
+  archivePrefix = {arXiv},
+  eprint = {1711.00199},
+  eprinttype = {arxiv},
+  file = {/home/justin/Zotero/storage/K8KEASA5/Xiang et al. - 2018 - PoseCNN A Convolutional Neural Network for 6D Obj.pdf},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  langid = {english},
+  primaryClass = {cs}
+}
+
+
