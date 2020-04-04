@@ -1,17 +1,6 @@
 # 6D_Pose_Estimation
 ECE 549/CS 543 Final Project
 
-# Getting the Code
-Clone this repo with 
-```
-git clone --recurse-submodules -j8 git@github.com:Jbwasse2/6D_Pose_Estimation.git
-```
-or 
-```
-git clone --recurse-submodules -j8 https://github.com/Jbwasse2/6D_Pose_Estimation.git
-```
-depending on whether you have ssh key set up and linked with github (Which I highly recommend doing so that way you don't have to keep entering in your username and password when you pull/push. See [this link](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more info.
-
 # Setting up your environment
 If you've never used the cluster before, this part will help you get all of the packages that we are using. 
 
@@ -43,8 +32,18 @@ To update your anaconda environment with changes to the requirements.txt run
 ```
 pip install -r requirements.txt
 ```
+# Getting the Code
+Clone this repo with 
+```
+git clone --recurse-submodules -j8 git@github.com:Jbwasse2/6D_Pose_Estimation.git
+```
+or 
+```
+git clone --recurse-submodules -j8 https://github.com/Jbwasse2/6D_Pose_Estimation.git
+```
+depending on whether you have ssh key set up and linked with github (Which I highly recommend doing so that way you don't have to keep entering in your username and password when you pull/push. See [this link](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more info.
 
-## Data
+# Data
 All data should be placed in the scratch folder in your $HOME directory (aka ~/). I am working out the details of having everyone use the same data. So I will update this soon.
 
 Trained models should not be pushed to github as this makes pushing/pulling a pain. Trained models should be left in the 'final_proj/models' in the scratch directory.
