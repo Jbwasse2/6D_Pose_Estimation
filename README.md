@@ -9,12 +9,26 @@ The following code will load various software that you'll likely need into your 
 ```
 echo $'module load anaconda/3\nmodule load cuda/10.0\nmodule load python/3\nmodule load texlive/2019\nmodule load curl/7.61.0\nmodule load git/2.19.0' >> ~/.bashrc
 ```
+After doing this, run the following to properly configure anaconda
+```
+echo ". /usr/local/anaconda/5.2.0/python3/etc/profile.d/conda.sh" >> ~/.bashrc
+```
+Finally, if you'd like anaconda to run on start up, run the following
+```
+echo "conda activate" >> ~/.bashrc
+```
 If you think there are other pieces of software you'd like, try running
 ```
 module avail
 ```
-to see what is available.
-
+to see what is available. Modules can be installed for your current session by 
+```
+module load {Software Name}
+```
+and modules can be permenantly added by adding the previous line to your .bashrc file as follows
+```
+echo $'module load {Software Name}' >> ~/.bashrc
+```
 ## Python
 Anaconda will be used to manage python packages to ensure everyone is using the same software. Please edit the file "requirements.txt" as needed. 
 
@@ -32,6 +46,12 @@ To update your anaconda environment with changes to the requirements.txt run
 ```
 pip install -r requirements.txt
 ```
+
+And to install specific packages
+```
+conda install {Package Name}
+```
+
 # Getting the Code
 Clone this repo with 
 ```
@@ -44,6 +64,6 @@ git clone --recurse-submodules -j8 https://github.com/Jbwasse2/6D_Pose_Estimatio
 depending on whether you have ssh key set up and linked with github (Which I highly recommend doing so that way you don't have to keep entering in your username and password when you pull/push. See [this link](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more info.
 
 # Data
-All data should be placed in the scratch folder in your $HOME directory (aka ~/). I am working out the details of having everyone use the same data. So I will update this soon.
+The data for this project is kept in my scratch directory. I have created a soft link to this directory in the repository (the soft link is named data). I have changed the permissions of this directory so anyone can change it. To access this data simply do 'cd data'. I will write a script to back up the data every night, just in case something happens. This backup will only be available to me.
 
 Trained models should not be pushed to github as this makes pushing/pulling a pain. Trained models should be left in the 'final_proj/models' in the scratch directory.
