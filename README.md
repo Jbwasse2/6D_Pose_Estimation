@@ -18,7 +18,7 @@ If you've never used the cluster before, this part will help you get all of the 
 ## .bashrc (Run once)
 The following code will load various software that you'll likely need into your environment for every time you ssh into the cluster. The following only needs to be ran once.
 ```
-echo "module load anaconda/3\nmodule load cuda/10.0\nmodule load python/3\nmodule load texlive/2019\nmodule load curl/7.61.0\nmodule load git/2.19.0" >> ~/.bashrc
+echo $'module load anaconda/3\nmodule load cuda/10.0\nmodule load python/3\nmodule load texlive/2019\nmodule load curl/7.61.0\nmodule load git/2.19.0' >> ~/.bashrc
 ```
 If you think there are other pieces of software you'd like, try running
 ```
