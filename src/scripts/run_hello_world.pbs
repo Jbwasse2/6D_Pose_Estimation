@@ -80,5 +80,5 @@
 
 # Change to the directory from which the batch job was submitted
 cd $PBS_O_WORKDIR
-
+# Run the bash scripts
 ./hello_world.sh

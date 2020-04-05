@@ -69,13 +69,16 @@
 #PBS -o py_gpu_script.out                                                            
 #PBS -e py_gpu_script.err
 #PBS -m be 
-#PBS -M jbwasse2@illinois.edu
+#PBS -M your_email@here
 #
 #####################################
 
 # Change to the directory from which the batch job was submitted
 cd $PBS_O_WORKDIR
 
+# Source bashrc to make the running environment similar to the one we experience when we ssh in
 source ~/.bashrc
+# Activate anaconda environment (in this case I assume its called cv)
 conda activate cv
+# Run the python scripts
 python test_gpu.py
