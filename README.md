@@ -99,7 +99,7 @@ or
 ```
 git clone --recurse-submodules -j8 https://github.com/Jbwasse2/6D_Pose_Estimation.git
 ```
-depending on whether you have ssh key set up and linked with github (Which I highly recommend doing so that way you don't have to keep entering in your username and password when you pull/push. See [this link](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more info.
+depending on whether you have ssh key set up and linked with github (Which I highly recommend doing so that way you don't have to keep entering in your username and password when you pull/push. See [this link](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) for more info. Follow the steps in the "Quality of Life (optional)" section under "Connecting to the Cluster Through SSH" to generate an SSH key.
 
 # Data
 The data for this project is kept in my scratch directory. I have created a soft link to this directory in the repository (the soft link is named data). I have changed the permissions of this directory so anyone can change it. To access this data simply do 'cd data'. I will write a script to back up the data every night, just in case something happens. This backup will only be available to me.
