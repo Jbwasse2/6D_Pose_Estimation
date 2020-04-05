@@ -39,7 +39,7 @@ Anaconda will be used to manage python packages to ensure everyone is using the 
 
 To create an anaconda environment
 ```
-conda create --name cv python=3.6
+conda create --name cv python=3.7
 ```
 
 To activate an anaconda environment
