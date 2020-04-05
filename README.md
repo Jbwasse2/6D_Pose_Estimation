@@ -13,7 +13,7 @@ After doing this, run the following to properly configure anaconda
 ```
 echo ". /usr/local/anaconda/5.2.0/python3/etc/profile.d/conda.sh" >> ~/.bashrc
 ```
-Next, I have had issues where I'd run out of memory in the home directory. Therefore I created a softlink to the scratch directory so that way there would be no memory issues
+Next, I have had issues where I'd run out of memory in the home directory while using anaconda. Therefore I created a softlink to the scratch directory so that way there would be no memory issues
 ```
 mkdir ~/scratch/conda
 ln -s ~/scratch/conda .conda
