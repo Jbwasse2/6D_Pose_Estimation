@@ -37,6 +37,11 @@ You should now be able to SSH into the cluster without needing to enter your net
 # Setting up your environment
 If you've never used the cluster before, this part will help you get all of the packages that we are using. 
 
+## A Quick Note About your Environment
+There are 2 main directories when you first ssh in. The first one is your home directory where you will enter as soon as you ssh in. This directory can be reached by doing 'cd ~/'. The home directory has a limited amount of space (2 GB) of data that can be stored here and is backed up every night. Your code should be placed in the home directory.
+
+The second important directory is the scratch directory. This directory is where your data should go. This directory has a limit of about 10 TB of data, so go wild. It should be noted that files not used in this directory within 30 days are deleted.
+
 ## .bashrc (Run once)
 The following code will load various software that you'll likely need into your environment for every time you ssh into the cluster.
 ```
@@ -102,6 +107,17 @@ git clone --recurse-submodules -j8 https://github.com/Jbwasse2/6D_Pose_Estimatio
 depending on whether you have ssh key set up and linked with github (Which I highly recommend doing so that way you don't have to keep entering in your username and password when you pull/push. See [this link](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) for more info. Follow the steps in the "Quality of Life (optional)" section under "Connecting to the Cluster Through SSH" to generate an SSH key.
 
 # Data
-The data for this project is kept in my scratch directory. I have created a soft link to this directory in the repository (the soft link is named data). I have changed the permissions of this directory so anyone can change it. To access this data simply do 'cd data'. I will write a script to back up the data every night, just in case something happens. This backup will only be available to me.
+The data for this project is kept in my scratch directory. I have created a soft link to this directory in the repository (the soft link is named data). I have changed the permissions of this directory so anyone can access it. To access this data simply do 'cd data'. It should be noted that this data this raw data can only be read to and not written to (except for me, so if you need something changed feel free to ask). However, if you want to change the data in a significant way, I'd recommend copying it to your scratch directory.
 
 Trained models should not be pushed to github as this makes pushing/pulling a pain. Trained models should be left in the 'final_proj/models' in the scratch directory.
+
+# Running your code
+
+In the file of this repository there is 'src/scripts', this has a few examples for running code. When running code for this project you will need to submit a job to the cluster. This will put the code you want to run into a queue. 
+
+If you are interested in running a bash script look at 'src/scripts/run_hello_world.pbs and if you are interested in running python with a GPU have a look at 'src/scripts/py_script.pbs'.
+
+To run either of these on the cluster do the following
+```
+qsub {script_name}.pbs
+```
