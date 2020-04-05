@@ -5,13 +5,18 @@ ECE 549/CS 543 Final Project
 If you've never used the cluster before, this part will help you get all of the packages that we are using. 
 
 ## .bashrc (Run once)
-The following code will load various software that you'll likely need into your environment for every time you ssh into the cluster. The following only needs to be ran once.
+The following code will load various software that you'll likely need into your environment for every time you ssh into the cluster.
 ```
 echo $'module load anaconda/3\nmodule load cuda/10.0\nmodule load python/3\nmodule load texlive/2019\nmodule load curl/7.61.0\nmodule load git/2.19.0' >> ~/.bashrc
 ```
 After doing this, run the following to properly configure anaconda
 ```
 echo ". /usr/local/anaconda/5.2.0/python3/etc/profile.d/conda.sh" >> ~/.bashrc
+```
+Next, I have had issues where I'd run out of memory in the home directory. Therefore I created a softlink to the scratch directory so that way there would be no memory issues
+```
+mkdir ~/scratch/conda
+ln -s ~/scratch/conda .conda
 ```
 Finally, if you'd like anaconda to run on start up, run the following
 ```
@@ -44,13 +49,13 @@ conda activate cv
 
 To update your anaconda environment with changes to the requirements.txt run
 ```
-pip install -r requirements.txt
+conda install --file requirements.txt
+```
+I had issues getting pip to work so some python packages may have to be downloaded more manually. For example torch can be installed with
+```
+conda install pytorch torchivsion -c pytorch
 ```
 
-And to install specific packages
-```
-conda install {Package Name}
-```
 
 # Getting the Code
 Clone this repo with 
