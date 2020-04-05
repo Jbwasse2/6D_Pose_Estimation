@@ -1,6 +1,39 @@
 # 6D_Pose_Estimation
 ECE 549/CS 543 Final Project
 
+# Connecting to the Cluster Through SSH
+You can SSH into the cluter through the command line with
+```
+ssh Your-NetID@cc-login.campuscluster.illinois.edu
+```
+If you don't have a command line interface available or would prefer to use a graphic interface, you can use [PuTTY](https://putty.org/).  
+
+You should then be prompted for a password which should be your netid password.  
+
+Finally, you will be sent an email for you to agree to terms and services for using the cluster which you should agree to if you want to use the cluster. It will take a few minutes for the servers to update that you have accepted the terms and conditions.
+
+## Quality of Life (optional)
+If you'd like to be able to SSH into the cluster without needing to enter your netid password every time you can do the following steps.
+
+### Step 1a - SSH Key
+Check if you have an SSH Key generated on your computer already with
+```
+file ~/.ssh/id_rsa.pub
+```
+If you get a message about the file not existing, go to step 1b. If you get a message along the lines of "OpenSSH RSA public key" you already have an SSH key and can skip to step 2.
+
+### Step 1b - Generating SSH Key
+Run the following, you will be prompted to create a password. You do not have to create a password and can simply press enter twice.
+```
+ssh-keygen -t rsa -b 4096 -C "Your@Email"
+```
+### Step 2 - Add SSH Key to Server
+Run the following, change "Your-NetID" to your actual netid.
+```
+cat ~/.ssh/id_rsa.pub | ssh Your-NetID@cc-login.campuscluster.illinois.edu 'cat >> ~/.ssh/authorized_keys'
+```
+You should now be able to SSH into the cluster without needing to enter your netid password.
+
 # Setting up your environment
 If you've never used the cluster before, this part will help you get all of the packages that we are using. 
 
