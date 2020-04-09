@@ -45,7 +45,7 @@ The second important directory is the scratch directory. This directory is where
 ## .bashrc (Run once)
 The following code will load various software that you'll likely need into your environment for every time you ssh into the cluster.
 ```
-echo $'module load anaconda/3\nmodule load cuda/10.0\nmodule load python/3\nmodule load texlive/2019\nmodule load curl/7.61.0\nmodule load git/2.19.0' >> ~/.bashrc
+echo $'module load anaconda/3\nmodule load cuda/9.2\nmodule load python/3\nmodule load texlive/2019\nmodule load curl/7.61.0\nmodule load git/2.19.0' >> ~/.bashrc
 ```
 After doing this, run the following to properly configure anaconda
 ```
