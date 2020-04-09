@@ -1,7 +1,10 @@
 numpy
 matplotlib
 pytorch==0.4.1
+torchvision
 scipy
 numpy
 pyyaml
+opencv
 matplotlib
+pillow=6.1
