@@ -121,3 +121,5 @@ To run either of these on the cluster do the following
 ```
 qsub {script_name}.pbs
 ```
+
+When running code on the cluster, it may be beneficial to use the secondary queue rather than the eng-instruction queue. See https://piazza.com/class/k5lnmkwhdjy47r?cid=264 for more info.
