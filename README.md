@@ -8,15 +8,18 @@ It should be noted that this code was just merging the branches we all worked on
 This README.md (useful for members of the class as a whole, I also fielded questions on piazza and in the issues tab)  
 ## Semantic Segmentation  
 DenseFusion/depth_segmentation/*  
+src/plot_sanjeev.py
 ## Pixel-wise Dense Fusion  
 DenseFusion/lib/network.py  
 ## Iterative Refinement  
 DenseFusion/tools/train.py  
 DenseFusion/lib/network.py  
+src/plot.py
 ## 6D Object Pose Estimation  
 DenseFusion/tools/eval_linemod.py  
 DenseFusion/lib/network.py  
 DenseFusion/datasets/linemod/dataset.py  
+src/plot.py
 
 # Connecting to the Cluster Through SSH
 You can SSH into the cluter through the command line with
