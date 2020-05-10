@@ -1,6 +1,22 @@
 # 6D_Pose_Estimation
 ECE 549/CS 543 Final Project
 
+# Contributions (LOOK HERE IF YOU ARE A TA/PROFESSOR GUPTA)
+The major changes per section of project are described below.
+It should be noted that this code was just merging the branches we all worked on, and we tended to work on some overlapping things, so git merged all of the code on top of eachother. This was done for the sake of having all of the code in one zip file for submission. If you want to run the code of an individual parts please find the corresponding branch on Github.
+
+This README.md (useful for members of the class as a whole, I also fielded questions on piazza and in the issues tab)
+## Semantic Segmentation
+DenseFusion/depth_segmentation/*
+## Pixel-wise Dense Fusion
+DenseFusion/lib/network.py
+## Iterative Refinement
+DenseFusion/tools/train.py
+DenseFusion/lib/network.py
+## 6D Object Pose Estimation
+DenseFusion/tools/eval_linemod.py
+DenseFusion/lib/network.py
+DenseFusion/datasets/linemod/dataset.py
 # Connecting to the Cluster Through SSH
 You can SSH into the cluter through the command line with
 ```
